@@ -1,37 +1,22 @@
 {
   "scripts": {
-    "dev": "./node_modules/.bin/de dist && gulp",
-    "build-dev": "./node_modules/.bin/de dist && gulp build",
-    "build": "./node_modules/.bin/de dist && gulp build --production",
-    "deploy": "./node_modules/.bin/de dist && gulp build --production && gulp deploy"
-  },
-  "jspm": {
-    "directories": {
-      "lib": "."
-    },
-    "dependencies": {
-      "classnames": "npm:classnames@^2.1.3",
-      "flux": "npm:flux@^2.0.3",
-      "react": "npm:react@^0.14.0-beta3",
-      "react-addons-css-transition-group": "npm:react-addons-css-transition-group@^0.14.0-beta3",
-      "react-dom": "npm:react-dom@^0.14.0-beta3",
-      "text": "github:systemjs/plugin-text@^0.0.2",
-      "three": "npm:three@^0.70.0",
-      "twbs/bootstrap-sass": "github:twbs/bootstrap-sass@^3.3.4",
-      "whatwg-fetch": "npm:whatwg-fetch@^0.9.0"
-    },
-    "devDependencies": {
-      "babel": "npm:babel-core@^5.1.13",
-      "babel-runtime": "npm:babel-runtime@^5.1.13",
-      "core-js": "npm:core-js@^0.9.4"
-    }
-  },
-  "dependencies": {
-    "jspm": "^0.16.1"
+    "dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js"
   },
   "devDependencies": {
+    "autoprefixer-loader": "^3.2.0",
+    "babel-core": "^6.1.4",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.4",
+    "babel-preset-react": "^6.1.4",
+    "babel-preset-stage-0": "^6.1.18",
+    "bootstrap-sass": "^3.3.4",
     "browser-sync": "^2.7.6",
+    "classnames": "^2.1.3",
+    "css-loader": "^0.23.1",
     "del": "^1.2.0",
+    "exports-loader": "^0.6.2",
+    "file-loader": "^0.8.5",
+    "flux": "^2.0.3",
     "gulp": "~3.9",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-awspublish": "^2.0.2",
@@ -46,9 +31,26 @@
     "gulp-svgfallback": "^3.0.2",
     "gulp-svgmin": "^1.2.0",
     "gulp-svgstore": "^5.0.3",
+    "imports-loader": "^0.6.5",
+    "json-loader": "^0.5.4",
     "merge-stream": "^1.0.0",
+    "modernizr": "^3.3.1",
+    "modernizr-loader": "0.0.4",
     "proxy-middleware": "~0.11.0",
+    "react": "^0.14.0-beta3",
+    "react-addons-css-transition-group": "^0.14.0-beta3",
+    "react-dom": "^0.14.0-beta3",
+    "react-hot-loader": "^1.3.0",
     "request": "^2.61.0",
+    "sass-loader": "^3.1.2",
+    "stats-webpack-plugin": "^0.2.1",
+    "style-loader": "^0.13.0",
+    "three": "^0.70.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.9.11",
+    "webpack-dev-server": "^1.9.0",
+    "webpack-glsl-loader": "^1.0.1",
+    "whatwg-fetch": "^0.9.0",
     "yargs": "^3.10.0"
   }
 }
