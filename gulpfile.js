@@ -11,7 +11,7 @@ var gulp = require('gulp'),
     shell = require('gulp-shell'),
     argv = require('yargs').argv
 
-gulp.task('default', ['watch'], function() {
+gulp.task('default', ['sass:watch', 'preprocess:watch'], function() {
   browserSync.init({
     server: {
       baseDir: "./src"
