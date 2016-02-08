@@ -73,8 +73,13 @@
     })();
   </script>
 
-  <!-- <script src="/assets/js/main.js" defer="defer"></script> -->
-  <script src="http://localhost:8080/assets/js/main.js" defer="defer"></script>
+  <!-- @if NODE_ENV = 'production' -->
+    <script src="/assets/js/main.js" defer="defer"></script>
+  <!-- @endif -->
+  <!-- @if NODE_ENV = 'development' -->
+    <script src="http://localhost:8080/assets/js/main.js" defer="defer"></script>
+  <!-- @endif -->
+
 
 </body>
 </html>
