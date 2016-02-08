@@ -2,7 +2,7 @@
 
 # I Will Never Let You Go
 
-An interactive WebGL music video.
+An interactive WebGL music video, with [gulp](http://gulpjs.com/), [webpack](https://webpack.github.io/), and hot-reloading.
 
 You can [watch it here](https://iwillneverletyougo.com/).
 
@@ -12,11 +12,10 @@ You can [check out my other music here](http://wearebrightly.com).
 
 ## Getting started
 
-First up, install the dependencies and [JSPM](http://jspm.io/):
+First up, install the dependencies:
 
 ````
 npm install
-./node_modules/.bin/jspm install
 ````
 
 ## Imgur support
@@ -57,11 +56,11 @@ curl -o src/media/video-square.mp4 http://iwillneverletyougo.com.s3.amazonaws.co
 
 ## Fire it up
 
-Fire up the development server with `npm run dev` and check it out on [http://localhost:8888/](http://localhost:8888/)
+Fire up the development server with `gulp` and follow the url (most likely [http://localhost:3000/](http://localhost:3000/))
 
 ## Build
 
-Output to `/dist` with `npm run build`. Host it wherever!
+TODO: Make the build stage.
 
 ## Thanks
 
