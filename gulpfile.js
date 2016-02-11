@@ -46,7 +46,7 @@ gulp.task('preprocess', ['svg'], function() {
 })
 
 gulp.task('preprocess:watch', ['preprocess'], function() {
-  gulp.watch('./src/*.html', ['preprocess'])
+  gulp.watch('./layout/*.html', ['preprocess'])
 })
 
 gulp.task('svg', function () {
